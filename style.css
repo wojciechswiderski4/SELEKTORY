@@ -1,0 +1,149 @@
+body{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body > div{
+  min-width: 350px;
+  min-height: 625px;
+  width: calc(45vw - 60px);
+  height: calc(100vh - 60px);
+  padding: 20px;
+  border: 1px solid black;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+
+.nav{
+  margin: 10px 0 10px 5vw;
+}
+.nav form{
+  margin-bottom: 15px;
+  height: calc(30% - 15px);
+  font-size: 12px;
+}
+.bod{
+  margin: 10px auto 10px 0;
+  border-left: 0;
+  background-color: #E5E5F7;
+  background-size: 20px 20px;
+  background-image: repeating-linear-gradient(45deg, #eee 0, #eee 2px, #fff 0, #fff 50%);
+}
+.bod > div {
+  border: 1px solid #eee;
+  background: white;
+  height: 100%;
+}
+textarea{
+  margin-top: 20px;
+  width: -webkit-fill-available;
+  height: calc(70% - 20px);
+  resize: none;
+  font-size: 12px;
+}
+
+.bod header{
+  height: 20px;
+  background: #777;
+  padding: 10px;
+}
+.bod #main-content{
+  height: calc(100% - 120px);
+}
+.bod .main{
+  height: 100px;
+  padding: 10px 40px;
+}
+.bod footer{
+  height: 60px;
+  background: #333;
+  padding: 10px;
+}
+img{
+  height: 50%;
+}
+
+nav{
+  float: right;
+}
+
+footer a, header a{
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 0 12px;
+}
+footer a:hover, header a:hover{
+  text-decoration: underline;
+}
+footer nav, footer nav div, footer img{
+  display: inline-block;
+}
+
+footer nav div{
+  width: 100px;
+}
+
+.module-banner{
+  background-image: url("http://placekitten.com/520/100");
+  height: 100px;
+  margin:0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1{
+  color: white;
+  text-shadow: 1px 1px #000;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+.module-image > *{
+  display: inline-block;
+  max-width: 80%;
+}
+
+h2{
+  font-size: 14px;
+}
+p{
+  font-size: 10px;
+}
+.table{
+  font-size: 10px;
+  width:  49%
+}
+table{
+  width: 100%;
+}
+table thead{
+  background: #eee;
+}
+td:first-child{
+  background: #eee;
+  padding-left: 10px;
+}
+td:not(:first-child){
+  text-align: center;
+}
+
+.module-table > * {
+  width: calc(49%- 30px);
+  display: inline-block;
+  font-size: 10px
+}
+
+.mark{
+  border: 1px solid red!important;
+}
+form div{
+  width: 45%;
+  display: inline-block;
+}
+button{
+  position: absolute;
+  bottom: 14px;
+  right: 20px;
+}

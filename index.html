@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Selektory</title>
+    <meta name="description" content="Selektory Szkolenie" />
+    <meta name="author" content="SitePoint" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" id="change" />
+  </head>
+
+  <body>
+    <div class="nav">
+      <form>
+        <div><input type="radio" name="css" value="1" /><label>a</label></div>
+        <div><input type="radio" name="css" value="2" /><label>header a</label></div>
+        <br />
+        <div><input type="radio" name="css" value="3" /><label>#main-content</label></div>
+        <div><input type="radio" name="css" value="4" /><label>p</label></div>
+        <br />
+        <div><input type="radio" name="css" value="5" /><label>img</label></div>
+        <div><input type="radio" name="css" value="6" /><label>#main-content img</label></div>
+        <div><input type="radio" name="css" value="7" /><label>footer img,header img</label></div>
+        <br />
+        <div><input type="radio" name="css" value="8" /><label>table</label></div>
+        <div><input type="radio" name="css" value="8" /><label>table td</label></div>
+        <br />
+        <div><input type="radio" name="css" value="8" /><label>[href="https://www.google.com/"]</label></div>
+        <div><input type="radio" name="css" value="8" /><label>[href*="google"]</label></div>
+        <div><input type="radio" name="css" value="8" /><label>[href*="google.com"]</label></div>
+        <br />
+        <br />
+        <label>Własny Selektor: </label><input type="text"/>
+        <br />
+      </form>
+      <textarea >
+<header>
+  <img src="logo.png" />
+  <nav>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+    <a href="#">Clients</a>
+    <a href="https://www.google.com/">Google</a>
+  </nav>
+</header>
+<div class="some-class" id="main-content">
+  <div class="module-banner">
+    <h1>Selektory</h1>
+  </div>
+  <div class="module-image main">
+    <img src="cat.png" data-type="atom" />
+    <div id="ipsum" data-type="atom">
+      <h2>Lorem Ipsum</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Vestibulum pharetra suscipit felis, vel viverra lectus
+        ullamcorper vitae. Vivamus dictum arcu in diam mollis malesuada.
+        Integer varius lacus vel libero finibus, sit amet eleifend mi
+        ultrices. Fusce non dapibus sem. Nam vitae ex orci. Nulla
+        pretium quam et diam venenatis faucibus.
+      </p>
+    </div>
+  </div>
+  <div class="module-table main">
+    <div class="table" data-type="atom">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Good</th>
+            <th>Better</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cats</td>
+            <td>✅</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td>Dogs</td>
+            <td>✅</td>
+            <td>❌</td>
+          </tr>
+          <tr>
+            <td>Horses</td>
+            <td>❌</td>
+            <td>❌</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ul data-type="atom">
+      <h2>Lorem Ipsum</h2>
+      <li>Lorem Ipsum</li>
+      <li>Lorem Ipsum</li>
+      <li>Lorem Ipsum</li>
+      <li>Lorem Ipsum</li>
+    </ul>
+  </div>
+  <div class="module-image main">
+    <img src="cat.png" data-type="atom" />
+    <div data-type="atom">
+      <h2>Lorem Ipsum</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Vestibulum pharetra suscipit felis, vel viverra lectus
+        ullamcorper vitae. Vivamus dictum arcu in diam mollis malesuada.
+        Integer varius lacus vel libero finibus, sit amet eleifend mi
+        ultrices. Fusce non dapibus sem. Nam vitae ex orci. Nulla
+        pretium quam et diam venenatis faucibus.
+      </p>
+    </div>
+  </div>  
+</div>
+<footer>
+  <img src="logo.png" />
+  <nav>
+    <div>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+    </div>
+    <div>
+      <a href="#">Terms</a>
+      <a href="#">Cookies</a>
+    </div>
+    <div>
+      <a href="https://www.google.com/">Google.com</a>
+      <a href="https://www.google.pl/">Google.pl</a>
+    </div>
+  </nav>
+</footer>
+      </textarea>
+      <button>></button>
+    </div>
+    <div class="bod">
+      <div>
+        <header>
+          <img src="logo.png" />
+          <nav>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Clients</a>
+            <a href="https://www.google.com/">Google</a>
+          </nav>
+        </header>
+        <div class="some-class" id="main-content">
+          <div class="module-banner">
+            <h1>Selektory</h1>
+          </div>
+          <div class="module-image main">
+            <img src="cat.png"  data-type="atom"/>
+            <div id="ipsum" data-type="atom">
+              <h2>Lorem Ipsum</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum pharetra suscipit felis, vel viverra lectus
+                ullamcorper vitae. Vivamus dictum arcu in diam mollis malesuada.
+                Integer varius lacus vel libero finibus, sit amet eleifend mi
+                ultrices. Fusce non dapibus sem. Nam vitae ex orci. Nulla
+                pretium quam et diam venenatis faucibus.
+              </p>
+            </div>
+          </div>
+          <div class="module-table main">
+            <div class="table" data-type="atom">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Good</th>
+                    <th>Better</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Cats</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                  </tr>
+                  <tr>
+                    <td>Dogs</td>
+                    <td>✅</td>
+                    <td>❌</td>
+                  </tr>
+                  <tr>
+                    <td>Horses</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <ul data-type="atom">
+              <h2>Lorem Ipsum</h2>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+            </ul>
+          </div>
+          <div class="module-image main">
+            <img src="cat.png"  data-type="atom"/>
+            <div data-type="atom">
+              <h2>Lorem Ipsum</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum pharetra suscipit felis, vel viverra lectus
+                ullamcorper vitae. Vivamus dictum arcu in diam mollis malesuada.
+                Integer varius lacus vel libero finibus, sit amet eleifend mi
+                ultrices. Fusce non dapibus sem. Nam vitae ex orci. Nulla
+                pretium quam et diam venenatis faucibus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <img src="logo.png" />
+          <nav>
+            <div>
+              <a href="#">About Us</a>
+              <a href="#">Contact</a>
+            </div>
+            <div>
+              <a href="#">Terms</a>
+              <a href="#">Cookies</a>
+            </div>
+            <div>
+              <a href="https://www.google.com/">Google.com</a>
+              <a href="https://www.google.pl/">Google.pl</a>
+            </div>
+          </nav>
+        </footer>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
